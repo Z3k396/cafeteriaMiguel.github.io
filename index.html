@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Cocina Semanal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function mostrarDia(dia) {
+            // Oculta todas las secciones de días
+            const secciones = document.querySelectorAll('.day-section');
+            secciones.forEach(section => section.style.display = 'none');
+
+            // Muestra solo la sección del día seleccionado
+            document.getElementById(dia).style.display = 'block';
+        }
+
+        // Mostrar la sección Home por defecto al cargar la página
+        document.addEventListener("DOMContentLoaded", () => {
+            mostrarDia('home');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog de Cocina Semanal</h1>
+        <p>Un menú diferente cada día de la semana</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="mostrarDia('home')">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrarDia('lunes')">Lunes</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrarDia('martes')">Martes</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrarDia('miercoles')">Miércoles</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrarDia('jueves')">Jueves</a></li>
+            <li><a href="javascript:void(0)" onclick="mostrarDia('viernes')">Viernes</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Sección Home -->
+    <section id="home" class="day-section">
+    <h2>Bienvenido a la Cafetería Empresarial</h2>
+    <p>¡Nos complace darte la bienvenida a la cafetería de nuestra empresa! Aquí, cada día nos esforzamos en ofrecerte un menú variado, fresco y delicioso, diseñado para satisfacer tus gustos y necesidades durante la jornada laboral. La cafetería es más que un lugar para comer, es un espacio para compartir, recargar energías y disfrutar de un momento de pausa en el trabajo. Cada plato ha sido pensado para brindarte una experiencia casera, con ingredientes de alta calidad y recetas que te harán sentir como en casa.</p>
+    
+    <p>Nuestro menú semanal cubre todos los días laborables, de lunes a viernes, con una propuesta diferente para cada día. Hemos incluido platos saludables, reconfortantes y llenos de sabor que te ayudarán a mantenerte enfocado y con energía durante el día. Sabemos que un buen almuerzo marca la diferencia, así que acompáñanos y descubre las opciones que tenemos preparadas para ti esta semana.</p>
+    
+    <h3>Menú Semanal</h3>
+    <p>A continuación, te presentamos el menú de la semana. Cada día podrás disfrutar de un plato diferente, elaborado con cariño por nuestro equipo de cocina:</p>
+    
+    <ul>
+        <li><strong>Lunes:</strong> <em>Pasta al Pesto</em> - Comenzamos la semana con un plato de pasta al pesto. Esta receta combina albahaca fresca, ajo, piñones y queso parmesano, creando una salsa deliciosa que se mezcla perfectamente con la pasta. Es una opción ideal para arrancar la semana con energía y buen sabor. La pasta se acompaña con un toque de aceite de oliva y pimienta, para darle ese toque final que la hace irresistible.</li>
+        
+        <li><strong>Martes:</strong> <em>Ensalada César</em> - El martes es el día perfecto para una comida ligera y refrescante. Nuestra ensalada César incluye lechuga romana crujiente, tiras de pollo a la parrilla, queso parmesano, crutones dorados y un aderezo César casero con un toque de limón. Es una opción balanceada que aporta frescura y te ayuda a mantener la ligereza sin perder sabor. ¡Perfecta para un día productivo!</li>
+        
+        <li><strong>Miércoles:</strong> <em>Sopa de Tomate y Albahaca</em> - Para la mitad de la semana, te ofrecemos una sopa reconfortante de tomate y albahaca. Este plato está lleno de sabor y es ideal para esos días en los que necesitas una comida cálida y nutritiva. Hecha con tomates frescos y un toque de albahaca, esta sopa se sirve caliente y es perfecta para disfrutar con un trozo de pan crujiente. Es una receta que te ayudará a recargar energías a mitad de semana.</li>
+        
+        <li><strong>Jueves:</strong> <em>Tacos de Pescado</em> - Para el jueves, te traemos unos tacos de pescado llenos de frescura y sabor. Los tacos se preparan con filetes de pescado blanco sazonado, servidos en tortillas de maíz y acompañados con col rallada, jugo de lima y una salsa cremosa que complementa perfectamente el sabor del pescado. Es una opción deliciosa y llena de vida, ideal para disfrutar antes de cerrar la semana laboral.</li>
+        
+        <li><strong>Viernes:</strong> <em>Pizza Margarita Casera</em> - Llegamos al viernes, y qué mejor manera de terminar la semana que con una pizza margarita casera. Esta pizza se elabora con salsa de tomate, rodajas de mozzarella fresca y hojas de albahaca, horneada hasta que los bordes estén crujientes y el queso perfectamente derretido. Es el plato perfecto para relajarse y disfrutar del cierre de la semana laboral. ¡Un clásico italiano para empezar el fin de semana con buen sabor!</li>
+    </ul>
+    
+    <p>Esperamos que cada uno de estos platos haga de tu hora de almuerzo un momento especial. Nuestra meta es que puedas disfrutar de una comida deliciosa, sin tener que salir de la oficina, y que encuentres en cada plato una combinación de calidad y buen gusto. Recuerda que estamos aquí para ofrecerte lo mejor, y cada día podrás disfrutar de una receta diferente, especialmente pensada para ti.</p>
+    
+    <p>Gracias por elegir nuestra cafetería como tu lugar de almuerzo diario. Nos vemos cada día para compartir juntos estos sabores y hacer que tu jornada sea más agradable y productiva. ¡Buen provecho y que disfrutes de nuestro menú semanal!</p>
+</section>
+
+
+
+    <!-- Secciones para cada día de la semana -->
+    <section id="lunes" class="day-section">
+    <h2>Lunes</h2>
+    <h3>Pasta al Pesto</h3>
+    
+    <!-- Imagen y detalles de la receta -->
+    <div class="recipe-content">
+        <img src="images/pesto.jpg" alt="Pasta al Pesto">
+        
+        <div class="recipe-details">
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li>200g de pasta (tu elección)</li>
+                <li>50g de albahaca fresca</li>
+                <li>2 dientes de ajo</li>
+                <li>30g de piñones</li>
+                <li>50g de queso parmesano rallado</li>
+                <li>100ml de aceite de oliva</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+
+            <h4>Instrucciones:</h4>
+            <p>1. Cocina la pasta según las instrucciones del paquete. Escurre y reserva.</p>
+            <p>2. En un procesador de alimentos, añade la albahaca, el ajo, los piñones, el queso parmesano y el aceite de oliva. Tritura hasta obtener una mezcla homogénea.</p>
+            <p>3. Mezcla la pasta con el pesto. Añade sal y pimienta al gusto. Sirve y disfruta de esta deliciosa pasta al pesto.</p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="martes" class="day-section">
+    <h2>Martes</h2>
+    <h3>Ensalada César</h3>
+    
+    <!-- Imagen y detalles de la receta -->
+    <div class="recipe-content">
+        <img src="images/cesar.jpg" alt="Ensalada César">
+        
+        <div class="recipe-details">
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li>Lechuga romana</li>
+                <li>100g de pechuga de pollo a la parrilla</li>
+                <li>50g de queso parmesano rallado</li>
+                <li>Crutones</li>
+                <li>Aderezo César (mayonesa, mostaza, ajo, anchoas, limón)</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+
+            <h4>Instrucciones:</h4>
+            <p>1. Lava y seca la lechuga romana. Corta en trozos y colócala en un bol grande.</p>
+            <p>2. Cocina la pechuga de pollo a la parrilla hasta que esté dorada y cortada en tiras.</p>
+            <p>3. Agrega el queso parmesano, los crutones y el pollo a la lechuga.</p>
+            <p>4. Prepara el aderezo César mezclando mayonesa, mostaza, ajo picado, anchoas y un poco de jugo de limón.</p>
+            <p>5. Vierte el aderezo sobre la ensalada, mezcla bien, y añade sal y pimienta al gusto. ¡Disfruta de esta ensalada César fresca y deliciosa!</p>
+        </div>
+    </div>
+</section>
+
+
+<section id="miercoles" class="day-section">
+    <h2>Miércoles</h2>
+    <h3>Sopa de Tomate y Albahaca</h3>
+    
+    <!-- Imagen y detalles de la receta -->
+    <div class="recipe-content">
+        <img src="images/sopa.jpg" alt="Sopa de Tomate y Albahaca">
+        
+        <div class="recipe-details">
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li>1 kg de tomates maduros</li>
+                <li>1 cebolla mediana</li>
+                <li>2 dientes de ajo</li>
+                <li>500 ml de caldo de verduras</li>
+                <li>Un puñado de hojas de albahaca fresca</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Aceite de oliva</li>
+            </ul>
+
+            <h4>Instrucciones:</h4>
+            <p>1. Lava y corta los tomates en trozos grandes. Pica la cebolla y el ajo.</p>
+            <p>2. En una olla grande, calienta un poco de aceite de oliva y sofríe la cebolla y el ajo hasta que estén dorados.</p>
+            <p>3. Agrega los tomates a la olla y cocina por unos minutos hasta que se ablanden.</p>
+            <p>4. Vierte el caldo de verduras y deja que la mezcla hierva. Reduce el fuego y cocina a fuego lento durante 20 minutos.</p>
+            <p>5. Agrega las hojas de albahaca y, usando una batidora, tritura la mezcla hasta que quede suave.</p>
+            <p>6. Ajusta la sal y pimienta al gusto, y sirve caliente. ¡Disfruta de esta deliciosa sopa de tomate y albahaca!</p>
+        </div>
+    </div>
+</section>
+
+<section id="jueves" class="day-section">
+    <h2>Jueves</h2>
+    <h3>Tacos de Pescado</h3>
+    
+    <!-- Imagen y detalles de la receta -->
+    <div class="recipe-content">
+        <img src="images/tacos.jpg" alt="Tacos de Pescado">
+        
+        <div class="recipe-details">
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li>500g de filetes de pescado blanco (como tilapia o bacalao)</li>
+                <li>1 cucharadita de comino en polvo</li>
+                <li>1 cucharadita de pimentón</li>
+                <li>1/2 cucharadita de ajo en polvo</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>8 tortillas de maíz</li>
+                <li>Col rallada</li>
+                <li>Jugo de 1 lima</li>
+                <li>Salsa de yogur o mayonesa</li>
+                <li>Cilantro fresco para decorar</li>
+            </ul>
+
+            <h4>Instrucciones:</h4>
+            <p>1. Corta el pescado en tiras y sazónalo con comino, pimentón, ajo en polvo, sal y pimienta.</p>
+            <p>2. En una sartén con un poco de aceite, cocina el pescado durante unos 2-3 minutos por cada lado, hasta que esté dorado y cocido.</p>
+            <p>3. Calienta las tortillas en otra sartén o en el microondas.</p>
+            <p>4. Coloca el pescado en las tortillas y añade col rallada y un poco de jugo de lima.</p>
+            <p>5. Agrega una cucharada de salsa de yogur o mayonesa y decora con cilantro fresco.</p>
+            <p>6. Sirve los tacos inmediatamente y disfruta de esta receta fresca y sabrosa.</p>
+        </div>
+    </div>
+</section>
+
+<section id="viernes" class="day-section">
+    <h2>Viernes</h2>
+    <h3>Menú: Pizza Margarita Casera</h3>
+    
+    <!-- Imagen y detalles de la receta -->
+    <div class="recipe-content">
+        <img src="images/pizza.jpg" alt="Pizza Margarita Casera">
+        
+        <div class="recipe-details">
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li>1 base de masa para pizza (puedes usar comprada o hecha en casa)</li>
+                <li>200g de salsa de tomate</li>
+                <li>150g de queso mozzarella fresco</li>
+                <li>Hojas de albahaca fresca</li>
+                <li>1 cucharada de aceite de oliva</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+
+            <h4>Instrucciones:</h4>
+            <p>1. Precalienta el horno a 220°C (430°F).</p>
+            <p>2. Coloca la masa de pizza en una bandeja para hornear ligeramente enharinada o con papel de hornear.</p>
+            <p>3. Extiende la salsa de tomate sobre la masa de manera uniforme.</p>
+            <p>4. Corta la mozzarella en rodajas y distribúyelas sobre la salsa de tomate.</p>
+            <p>5. Agrega unas hojas de albahaca por encima y sazona con un poco de sal y pimienta.</p>
+            <p>6. Hornea la pizza durante 10-12 minutos, o hasta que los bordes estén dorados y el queso derretido.</p>
+            <p>7. Retira del horno, añade un chorrito de aceite de oliva y sirve caliente. ¡Disfruta de esta deliciosa pizza margarita casera!</p>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 Blog de Cocina Semanal</p>
+    </footer>
+</body>
+</html>
